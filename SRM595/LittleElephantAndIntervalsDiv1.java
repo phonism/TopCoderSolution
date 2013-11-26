@@ -1,8 +1,5 @@
-package SRM595;
-
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Scanner;
 
 public class LittleElephantAndIntervalsDiv1 {
 
@@ -23,24 +20,6 @@ public class LittleElephantAndIntervalsDiv1 {
 				hash.add(i);
 		}
 		return ((long)1 << hash.size());
-	}
-	
-	Scanner scan = new Scanner(System.in);
-	
-	public void run() {
-		int M = scan.nextInt();
-		int n = scan.nextInt();
-		int[] L = new int[n];
-		int[] R = new int[n];
-		for (int i = 0; i < n; i++)
-			L[i] = scan.nextInt();
-		for (int i = 0; i < n; i++)
-			R[i] = scan.nextInt();
-		System.out.println(getNumber(M, L, R));
-	}
-
-	public static void main(String args[]) {
-		new LittleElephantAndIntervalsDiv1().run();
 	}
 	
 }
